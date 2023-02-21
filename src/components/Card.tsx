@@ -3,17 +3,12 @@ import {useDispatch} from 'react-redux'
 import {addEvent} from '../reducers/reducer'
 import {Event} from '../reducers/reducer'
 
-export default function Card(props: {data: Event, index:number}) {
+export default function Card(props:{data:Event}) {
     const dispatch = useDispatch()
-    console.log(props.data);
-    function handleClick() {
-        dispatch(addEvent(props.data))
-    }
 
     return (
-        <section className="card" onClick={handleClick}>
+        <section className="card" onClick={() => dispatch(addEvent(props.data))}>
             <p>card</p>
-
         </section>
     )
 }

@@ -9,7 +9,7 @@ export interface Event  {
 
 export interface Action {
     type:string;
-    payload:Event
+    payload?:Event
 }
 
 const initialState:Event = {
@@ -24,7 +24,7 @@ const initialState:Event = {
 export default function reducer(state:Event=initialState, action:Action):Event {
     switch(action.type) {
         case "add": {
-            return action.payload
+            return action.payload as Event
         }
         case "clear": {
             return initialState
@@ -40,9 +40,8 @@ export function addEvent(event:Event):Action {
     }
 }
 
-export function removeEvent(event:Event):Action {
+export function clearState() {
     return {
-        type: "remove",
-        payload: initialState
+        type: "clear",
     }
 }
