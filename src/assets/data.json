@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Lasse-Stefanz",
+        "location": "Kjell Härnqvistsalen",
+        "date": "2023-03-21",
+        "startTime": "19:00",
+        "endTime": "21:00",
+        "price": 350
+    },{
+        "name": "Pelle trubadur",
+        "location": "Pubelipuben",
+        "date": "2023-03-29",
+        "startTime": "22:00",
+        "endTime": "00:00",
+        "price": 110
+    },{
+        "name": "Kajsa kör",
+        "location": "Götaplatsen",
+        "date": "2023-04-10",
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "price": 99
+    },{
+        "name": "Klubb Untz",
+        "location": "Din favoritkällare",
+        "date": "2023-04-17",
+        "startTime": "22:00",
+        "endTime": null,
+        "price": 150
+    }
+]
