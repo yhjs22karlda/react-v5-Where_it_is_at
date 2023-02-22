@@ -13,9 +13,14 @@ export default function Events() {
 
     return (
         <div className="events">
-            <Link to="/buy">
-                {dateData.map((card, i) => <Card key={i} data={card} />)}
-            </Link>
+            <h1>Events</h1>
+            {dateData.map((card, i) => {
+                return (
+                    <Link to="/buy">
+                        <Card key={i} data={card} />
+                    </Link>
+                )
+            })}
         </div>
     )
 }

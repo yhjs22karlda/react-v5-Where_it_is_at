@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Sansita+Swashed&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira sans', sans-serif;
+    color: white;
+}
+
+h1 {
+    color:#f56b9a;
+    font-family: 'Sansita Swashed', sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: inherit;
+    }
+}

@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.date {
+    border: 1px solid white;
+    width: 100px;
+}
+
+.info {
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.info p {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.time-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info time{
+    font-size: 14px;
+}
