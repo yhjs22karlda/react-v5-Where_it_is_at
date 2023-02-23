@@ -1,0 +1,44 @@
+.buy {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.buy .text {
+    color: rgb(255 255 255 / .8);
+    font-size: 19px;
+    font-style: italic;
+    max-width: 60%;
+    text-align: center;
+    margin: 3rem 0 3rem;
+}
+
+.buy h1 {
+    margin: 0 0 .8rem;
+}
+
+.buy .date {
+    margin: 0 0 .8rem;
+    font-size: 19px;
+    color: #37aeab;
+    font-weight: bold;
+}
+
+.buy .location {
+    color: rgb(255 255 255 / .7);
+    font-style: italic;
+    font-size: 16px;
+    margin: 0 0 4rem;
+}
+
+.buy .price {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #f56b9a;
+    margin-bottom: auto;
+}
+
+
+

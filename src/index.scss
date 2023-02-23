@@ -31,3 +31,26 @@ a {
         color: inherit;
     }
 }
+
+.button {
+    width: 100%;
+    border: none;
+    margin: .2rem;
+    padding: 1rem;
+    color: white;
+    background-color: #37aeab;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.button--gray {
+    color: gray;
+}
+
+#root {
+    background-color: #231f42;
+    width: 414px;
+    padding: 2rem;
+    min-height: 700px;
+}

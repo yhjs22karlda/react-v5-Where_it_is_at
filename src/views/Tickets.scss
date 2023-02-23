@@ -1,0 +1,74 @@
+.tickets {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tickets > section {
+    border-bottom: 1px dashed gray;
+}
+
+.tickets h1 {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.tickets .small-text {
+    color: rgb(0 0 0 / .4);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .6rem 0 0 1.2rem;
+    margin: 0;
+}
+
+.tickets .what {
+    background-color: white;
+}
+
+.tickets h2 {
+    color: #f56b9a;
+    font-family: 'Sansita Swashed', sans-serif;
+    font-size: 26px;
+    padding: 1rem 0 2rem 1.2rem;
+    margin: 0;
+}
+
+.tickets .where {
+    background-color: #eee;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+
+    & p:last-child {
+        padding: 1rem 0 3rem 1.2rem;
+        margin: 0;
+    }
+}
+
+.tickets .when {
+    display: flex;
+    background-color: #ddd;
+    text-transform: capitalize;
+    // margin:0;
+
+    & > section {
+        // flex-grow: 1;
+        width: 33.33%;
+
+        &:not(:last-child) {
+            border-right: 1px dashed gray;
+        }
+
+        p:last-child {
+            color: rgb(0 0 0 / .8);
+            font-weight: 500;
+            margin: 0;
+            padding: .5rem 0 1rem 1.2rem; 
+        }
+    }
+}
+
+.tickets .button {
+    margin: auto 0 0;
+}

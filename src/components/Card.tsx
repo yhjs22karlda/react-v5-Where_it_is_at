@@ -9,17 +9,18 @@ export default function Card(props:{data:Event}) {
     return (
         <section className="card" onClick={() => dispatch(addEvent(props.data))}>
             <section className="date">
-                {info.date.getMonth()}
+                <div>{info.date.toLocaleString("default", {day: "numeric"})}</div>
+                <div>{info.date.toLocaleString("default", {month: "short"})}</div>
             </section>
             <section className="info">
                 <h2>{info.name}</h2>
                 <p>{info.location}</p>
                 <div className="time-price">
                     <div className="time">
-                        {info.startTime} - {info.endTime}
+                        {info.startTime} - {info.endTime ?? "du tröttnar"}
                     </div>
                     <div className="price">
-                        {info.price}
+                        {info.price} sek
                     </div>
                 </div>
             </section>

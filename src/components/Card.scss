@@ -1,33 +1,51 @@
 .card {
     display: flex;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-.date {
+.card .date {
     border: 1px solid white;
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.info {
+.card .info {
     padding-left: 1rem;
     width: 100%;
 }
 
-.info h2 {
-    margin: 0;
+.card .info h2 {
+    margin: 0 0 .2rem;
+    text-shadow: 1px 1px 0px #f56b9a;
 }
 
-.info p {
-    margin: 0;
+.card .info p {
+    margin: 0 0 .4rem;
     font-size: 12px;
     font-style: italic;
+    color: rgb(255 255 255 / .8)
 }
 
-.time-price {
+.card .time-price {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: .2rem;
 }
 
-.info time{
+.card .info .time{
     font-size: 14px;
+    color: #d0d0d0;
+}
+
+.card .info .price {
+    color: #37aeab;
+    font-weight: bold;
+    font-size: 17px;
 }
